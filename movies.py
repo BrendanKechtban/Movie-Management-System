@@ -1,24 +1,4 @@
 # Movies database class
-#
-# Written by Craig Miller, October 2021
-# Updated February 2023
-#
-# Requires movies.txt file, which was adapted from
-#    https://www.timeout.com/newyork/movies/best-movies-of-all-time
-#
-# Example usage:
-#   mdb = Movies('my_list')
-#   mdb.load() --- erases database and reloads from the text file movies.txt
-#   mdb.show()
-#   matches = mdb.title_search('jaws')
-#   print(f'We found {len(matches)}!')
-#
-#   mdb.delete(3)  --- delete record number 3
-#   mdb.mark_as_seen(2) --- indicate that movie 2 has been seen
-#   mdb.show_seen() --- show all movies that have been seen
-#
-#   mdb.close()  --- close the connection
-
 import re
 import sqlite3
 
